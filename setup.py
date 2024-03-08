@@ -7,7 +7,7 @@ setup(
     name="cupcakedb",
     version="0.1.0",
     author="Srinivas T B",
-    author_email="tbsrinivas.x@gmail.com,
+    author_email="tbsrinivas.x@gmail.com",
     description="(distributed) vector database",
     long_description=long_description,
     long_description_content_type="text/markdown",
