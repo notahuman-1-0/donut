@@ -1,5 +1,5 @@
 [project]
-name = "cupcakedb"
+name = "donutdb"
 version = "0.1.0"
 
 authors = [
@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/notahuman-1-0/cupcake"
+"Homepage" = "https://github.com/notahuman-1-0/donut"
 
 [build-system]
 requires = ["setuptools>=61.0"]

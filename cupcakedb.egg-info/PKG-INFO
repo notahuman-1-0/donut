@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
-Name: cupcakedb
+Name: donutdb
 Version: 0.1.0
 Summary: (distributed) vector database
-Home-page: https://github.com/notahuman-1-0/cupcake
+Home-page: https://github.com/notahuman-1-0/donut
 Author: Srinivas T B
 Author-email: tbsrinivas.x@gmail.com
 License: UNKNOWN
@@ -14,7 +14,7 @@ Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
-# 🧁 cupcake.
+# 🧁 donut.
 ### rad vector db
 
 

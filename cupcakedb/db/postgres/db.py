@@ -1,11 +1,11 @@
 from psycopg_pool import ConnectionPool
 from psycopg import sql
 from typing import Any, Dict, List, Optional, Tuple
-from cupcakedb.db import BaseDB
-import cupcakedb.db.postgres.queries as queries
-from cupcakedb.db.postgres.query_builder import QueryBuilder
-from cupcakedb.utils.types import IDs
-from cupcakedb.utils.utils import convert_row_to_dict
+from donutdb.db import BaseDB
+import donutdb.db.postgres.queries as queries
+from donutdb.db.postgres.query_builder import QueryBuilder
+from donutdb.utils.types import IDs
+from donutdb.utils.utils import convert_row_to_dict
 
 
 class PostgresDB(BaseDB):
@@ -47,7 +47,7 @@ class PostgresDB(BaseDB):
         index_name: str
     ):
         """
-        Delete an entire index from cupcake.
+        Delete an entire index from donut.
         -
         Parameters:
         ===========

@@ -5,7 +5,7 @@ def Client(
     database_type: Optional[str] = "sqlite",
     **kwargs
 ):
-    from cupcakedb.api.local import LocalAPI
+    from donutdb.api.local import LocalAPI
 
     return LocalAPI(persist_directory, database_type=database_type, **kwargs)
 
@@ -14,6 +14,6 @@ def Console(
     database_type: Optional[str] = "sqlite",
     **kwargs
 ):
-    from cupcakedb.api.console import ConsoleAPI
+    from donutdb.api.console import ConsoleAPI
 
     return ConsoleAPI(persist_directory, database_type=database_type, **kwargs)

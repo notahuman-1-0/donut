@@ -3,9 +3,9 @@ import pickle
 from typing import List, Optional
 from numpy import float32
 from numpy._typing import NDArray
-from cupcakedb.db.index.hnswlib import HnswIndex
-from cupcakedb.utils.types import IDs
-from cupcakedb.utils.utils import ensure_valid_path
+from donutdb.db.index.hnswlib import HnswIndex
+from donutdb.utils.types import IDs
+from donutdb.utils.utils import ensure_valid_path
 
 
 class Index:
@@ -136,7 +136,7 @@ class Index:
             raise ValueError("Please provide either an embedding" + " or a document.")
 
         if (query_embeddings is None) and (documents is not None):
-            from cupcakedb.embedding.openai import get_embeddings
+            from donutdb.embedding.openai import get_embeddings
 
             embeddings = get_embeddings(documents)
             query_embeddings = embeddings

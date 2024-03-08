@@ -2,17 +2,17 @@ import os
 import numpy as np
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-import cupcakedb
+import donutdb
 
 app = FastAPI()
 
-PG_HOST = os.getenv("cupcake_PG_HOST", None)
-PG_PORT = os.getenv("cupcake_PG_PORT", 5432)
-PG_USER = os.getenv("cupcake_PG_USER", "postgres")
-PG_PASSWORD = os.getenv("cupcake_PG_PASSWORD", )
+PG_HOST = os.getenv("donut_PG_HOST", None)
+PG_PORT = os.getenv("donut_PG_PORT", 5432)
+PG_USER = os.getenv("donut_PG_USER", "postgres")
+PG_PASSWORD = os.getenv("donut_PG_PASSWORD", )
 
-client = cupcakedb.Client(
-    persist_directory="cupcake-data/pg",
+client = donutdb.Client(
+    persist_directory="donut-data/pg",
     database_type="pg",
     host=PG_HOST,
     port=PG_PORT,

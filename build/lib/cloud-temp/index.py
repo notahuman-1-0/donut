@@ -1,10 +1,10 @@
 import numpy as np
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from cupcakedb import Client
+from donutdb import Client
 
 app = FastAPI()
-client = Client(persist_directory="cupcake")
+client = Client(persist_directory="donut")
 
 @app.post("/index")
 def create_index(index_name: str, max_elements: int = 1000, allow_replace_deleted: bool = True, M = 64, ef_construction = 200):

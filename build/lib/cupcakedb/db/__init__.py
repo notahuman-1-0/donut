@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Any, Dict, List, Tuple, Optional
 
-from cupcakedb.utils.types import IDs
+from donutdb.utils.types import IDs
 
 
 class BaseDB(ABC):

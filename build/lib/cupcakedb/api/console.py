@@ -2,17 +2,17 @@ import os
 from typing import Any, Dict, Optional
 import shutil
 
-from cupcakedb.api.index import Index
-from cupcakedb.db import BaseDB
-#from cupcakedb.db.postgres.db import PostgresDB
-from cupcakedb.db.sqlite.db import SQLiteDB
+from donutdb.api.index import Index
+from donutdb.db import BaseDB
+#from donutdb.db.postgres.db import PostgresDB
+from donutdb.db.sqlite.db import SQLiteDB
 
 
 class ConsoleAPI:
     _db: Dict[str, Index] 
     _SQLClient: BaseDB
     persist_directory: Optional[str]
-    _TEMP_DIRECTORY = "cupcake_temp"
+    _TEMP_DIRECTORY = "donut_temp"
 
     def __init__(
         self,

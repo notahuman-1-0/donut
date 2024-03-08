@@ -1,3 +1,3 @@
-# 🧁 cupcake.
+# 🧁 donut.
 ### rad vector db
 

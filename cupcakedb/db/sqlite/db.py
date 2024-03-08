@@ -2,11 +2,11 @@ import os
 import sqlite3
 from typing import Dict, List, Optional, Tuple
 
-from cupcakedb.db import BaseDB
-from cupcakedb.utils.types import IDs
-from cupcakedb.utils.utils import convert_row_to_dict, ensure_valid_path
-import cupcakedb.db.sqlite.queries as queries
-from cupcakedb.db.sqlite.query_builder import QueryBuilder
+from donutdb.db import BaseDB
+from donutdb.utils.types import IDs
+from donutdb.utils.utils import convert_row_to_dict, ensure_valid_path
+import donutdb.db.sqlite.queries as queries
+from donutdb.db.sqlite.query_builder import QueryBuilder
 
 
 class SQLiteDB(BaseDB):
@@ -20,7 +20,7 @@ class SQLiteDB(BaseDB):
 
         self._con = sqlite3.connect(
             os.path.join(
-                persist_directory, "cupcake.db"
+                persist_directory, "donut.db"
             )
         )
 
@@ -55,7 +55,7 @@ class SQLiteDB(BaseDB):
         index_name: str,
     ):
         """
-        Delete an entire index from cupcake.
+        Delete an entire index from donut.
         -
         Parameters:
         ===========

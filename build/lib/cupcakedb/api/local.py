@@ -5,19 +5,19 @@ from numpy import float32
 from numpy._typing import NDArray
 import shutil
 
-from cupcakedb.api.index import Index
-from cupcakedb.db import BaseDB
-from cupcakedb.db.postgres.db import PostgresDB
-from cupcakedb.db.sqlite.db import SQLiteDB
-from cupcakedb.embedding.utils import get_cosine_similarity
-from cupcakedb.utils.types import IDs
+from donutdb.api.index import Index
+from donutdb.db import BaseDB
+from donutdb.db.postgres.db import PostgresDB
+from donutdb.db.sqlite.db import SQLiteDB
+from donutdb.embedding.utils import get_cosine_similarity
+from donutdb.utils.types import IDs
 
 
 class LocalAPI:
     _db: Dict[str, Index] 
     _SQLClient: BaseDB
     persist_directory: Optional[str]
-    _TEMP_DIRECTORY = "cupcake_temp"
+    _TEMP_DIRECTORY = "donut_temp"
 
     def __init__(
         self,
@@ -92,7 +92,7 @@ class LocalAPI:
             raise ValueError(f"Index with name '{index}' does not exist.")
 
         if (documents is not None) and (embeddings is None):
-            from cupcakedb.embedding.openai import get_embeddings
+            from donutdb.embedding.openai import get_embeddings
 
             embeddings = get_embeddings(documents)
 
@@ -247,7 +247,7 @@ class LocalAPI:
                     if (query_embeddings is None):
                         if documents is None:
                             raise Exception("Neither documents nor query embeddings provided.")
-                        from cupcakedb.embedding.openai import get_embeddings
+                        from donutdb.embedding.openai import get_embeddings
 
                         embeddings = get_embeddings(documents)
                         query_embeddings = embeddings
