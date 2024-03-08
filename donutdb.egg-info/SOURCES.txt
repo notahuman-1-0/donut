@@ -7,7 +7,14 @@ setup.py
 cloud-temp/__init__.py
 cloud-temp/index.py
 cloud-temp/main-pg.py
+dist/donutdb-0.1.0-py3-none-any.whl
+dist/donutdb-0.1.0.tar.gz
 donutdb/__init__.py
+donutdb-0.6.8.dist-info/LICENSE
+donutdb-0.6.8.dist-info/METADATA
+donutdb-0.6.8.dist-info/RECORD
+donutdb-0.6.8.dist-info/WHEEL
+donutdb-0.6.8.dist-info/top_level.txt
 donutdb.egg-info/PKG-INFO
 donutdb.egg-info/SOURCES.txt
 donutdb.egg-info/dependency_links.txt
