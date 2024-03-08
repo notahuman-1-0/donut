@@ -18,7 +18,7 @@ Requires-Dist: openai >=0.27
 Requires-Dist: psycopg[c] >=3.1.9
 Requires-Dist: psycopg[pool] >=3.1.7
 
-# 🧁 donut.
+# 🍩 donut.
 ### open-source (distributed) vector database
 
 ## Installation
